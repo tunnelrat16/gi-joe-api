@@ -54,7 +54,7 @@ public class FigureController {
     public Map<String, Figure> update(@RequestBody Figure figure, @PathVariable Long id) {
       Figure updatedResource = figureService
         .update(figure)
-        .orElseThrow(() -> new ResourceNotFoundException("No pokemon with that ID"));
+        .orElseThrow(() -> new ResourceNotFoundException("No figure with that ID"));
   
       return createHashSingular(updatedResource);
     }

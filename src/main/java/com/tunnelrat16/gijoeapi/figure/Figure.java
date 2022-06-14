@@ -31,4 +31,16 @@ public class Figure {
 
   @Column(name = "image_url")
   private String imageUrl;
+
+  @Column(name = "own_it")
+  private String ownIt;
+
+  @Column(name = "watch_list")
+  private String watchList;
+
+  @Column(name = "total")
+  private String total;
+
+  @Column(name = "notes")
+  private String notes;
 }
