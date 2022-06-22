@@ -35,6 +35,8 @@ public class FigureService {
       updatedFigure.setWatchList(figure.getWatchList());
       updatedFigure.setTotal(figure.getTotal());
       updatedFigure.setNotes(figure.getNotes());
+      updatedFigure.setVersion(figure.getVersion());
+      updatedFigure.setVariant(figure.getVariant());
 
       figureRepository.save(updatedFigure);
       return Optional.of(updatedFigure);

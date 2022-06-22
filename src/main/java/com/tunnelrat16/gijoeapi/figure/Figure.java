@@ -20,6 +20,9 @@ public class Figure {
   @Column(name = "name")
   private String name;
 
+  @Column(name = "version")
+  private String version;
+
   @Column(name = "year")
   private String year;
 
@@ -40,6 +43,9 @@ public class Figure {
 
   @Column(name = "total")
   private String total;
+
+  @Column(name = "variant")
+  private String variant;
 
   @Column(name = "notes")
   private String notes;
